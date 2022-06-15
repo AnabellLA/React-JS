@@ -6,7 +6,7 @@ function NavbarExample(){
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
-                <Navbar.Brand href="#home">Navbar-Ejemplo</Navbar.Brand>
+                <Navbar.Brand href="#home">MangaStore</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
