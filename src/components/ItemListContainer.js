@@ -1,5 +1,6 @@
 import './ItemListContainer.css';
 import Card from 'react-bootstrap/Card';
+import ItemCount from './ItemCount';
 
 function ItemListContainer({ product , price , Img }) {
     return(
@@ -8,6 +9,7 @@ function ItemListContainer({ product , price , Img }) {
             <Card.Body>
             <Card.Title>{product}</Card.Title>
                     <Card.Text>{price}</Card.Text>
+                    <ItemCount stock='6'/>
             </Card.Body>
         </Card>
     )

@@ -1,0 +1,29 @@
+#button{
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#reiniciar{
+    background-color:rgb(32, 32, 32);
+    border-radius: 7px;
+    padding: 2px 20px;
+    border: 0;
+    text-align: center;
+    font-weight: 500;
+    color:white;
+}
+
+h3{
+    margin: 0;
+    font-size: 30px;
+}
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
