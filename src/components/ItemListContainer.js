@@ -1,18 +1,25 @@
+import React, { useEffect, useState, setIsLoading } from 'react';
+import { ItemList } from './ItemList';
 import './ItemListContainer.css';
-import Card from 'react-bootstrap/Card';
-import ItemCount from './ItemCount';
 
-function ItemListContainer({ product , price , Img }) {
-    return(
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src= {Img} id="imagen" />
-            <Card.Body>
-            <Card.Title>{product}</Card.Title>
-                    <Card.Text>{price}</Card.Text>
-                    <ItemCount stock='6'/>
-            </Card.Body>
-        </Card>
-    )
-}
+const ItemListContainer = () => {
+
+const [productos, setproductos] = useState([])
+
+    useEffect(() => {
+        setTimeout(
+            () =>
+                fetch('./data/data.json')
+                .then(resp => resp.json())
+                .then(data => setproductos(data)), 2000
+        );
+    }, [])
+
+    return (
+        <div id='container'>
+            <ItemList Productos={productos} />
+        </div>
+    );
+    };
 
 export default ItemListContainer;

@@ -1,0 +1,86 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "Shingeki no Kyojin - volumen 1",
+        "precio" : 120, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/SNK-V1.jpg"
+    },
+    {
+        "id" : 2,
+        "nombre" : "Shingeki no Kyojin - volumen 2",
+        "precio" : 110, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/SNK-V2.jpg"
+    },
+    {
+        "id" : 3,
+        "nombre" : "Shingeki no Kyojin - volumen 3",
+        "precio" : 110, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/SNK-V3.jpg"
+    },
+    {
+        "id" : 4,
+        "nombre" : "Kimetsu no Yaiba - volumen 1",
+        "precio" : 130, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/KNY-V1.jpg"
+    },
+    {
+        "id" : 5,
+        "nombre" : "Kimetsu no Yaiba - volumen 2",
+        "precio" : 115, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/KNY-V2.jpg"
+    },
+    {
+        "id" : 6,
+        "nombre" : "Kimetsu no Yaiba - volumen 3",
+        "precio" : 115, 
+        "categoria" : "Shounen", 
+        "imagen" : "../assests/KNY-V3.jpg"
+    },
+    {
+        "id" : 7,
+        "nombre" : "Special A - volumen 1",
+        "precio" : 100, 
+        "categoria" : "Shōjo", 
+        "imagen" : "../assests/SA-V1.jpg"
+    },
+    {
+        "id" : 8,
+        "nombre" : "Special A - volumen 2",
+        "precio" : 90, 
+        "categoria" : "Shōjo", 
+        "imagen" : "../assests/SA-V2.jpg"
+    },
+    {
+        "id" : 9,
+        "nombre" : "Special A - volumen 3",
+        "precio" : 90, 
+        "categoria" : "Shōjo", 
+        "imagen" : "../assests/SA-V3.jpg"
+    },
+    {
+        "id" : 10,
+        "nombre" : "Chihayafuru - volumen 1",
+        "precio" : 120, 
+        "categoria" : "Josei", 
+        "imagen" : "../assests/CHIHAYAFURU-V1.jpg"
+    },
+    {
+        "id" : 11,
+        "nombre" : "Chihayafuru - volumen 2",
+        "precio" : 100, 
+        "categoria" : "Josei", 
+        "imagen" : "../assests/CHIHAYAFURU-V2.jpg"
+    },
+    {
+        "id" : 12,
+        "nombre" : "Chihayafuru - volumen 3",
+        "precio" : 100, 
+        "categoria" : "Josei", 
+        "imagen" : "../assests/CHIHAYAFURU-V3.jpg"
+    }
+]

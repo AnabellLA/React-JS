@@ -47,8 +47,7 @@ function ItemCount({ stock }){
                 <h3>{num}</h3>
                 <button onClick={sumar} id="button">+</button>
             </div>
-            <p>{ stock>1 ? `${stock} unidades disponibles` : `${stock} unidades disponibles` }</p>
-            <button onClick={reiniciar} id="reiniciar">Reiniciar</button>
+            <p>{ stock >= 1 ? `${stock} unidades disponibles` : 'No hay stock' }</p>
         </>
     )
 }
