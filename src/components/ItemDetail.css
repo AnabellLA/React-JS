@@ -55,7 +55,7 @@
     height: auto;
     border-radius: 25px;
 }
-li{
+#list{
     list-style: none;
     text-align: left;
     margin-top: 20px;
@@ -67,19 +67,19 @@ li{
     font-weight: 300;
     padding-left: 0;
 }
-p{
+#sinopsis{
     text-align: justify;
     margin-left: 20px;
     margin-top: 20px;
     font-weight: 400;
 }
-h4{
-    font-weight: 100;
+#stock{
+    font-weight: 300;
 }
-h1{
+#precio{
     font-weight: 900;
     font-size: 35px;
 }
-h2{
+#nombre{
     font-weight: 700;
 }

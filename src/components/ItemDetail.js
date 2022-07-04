@@ -10,12 +10,12 @@ export const ItemDetail = ({producto}) => {
                     <img src={producto.imagen} alt={producto.nombre} id='imageFull'/>
                 </div>
                 <div id='detail'>
-                    <h2>{producto.nombre}</h2>
-                    <h3>{producto.autor}</h3>
-                    <h1>S/ {producto.precio}</h1>
-                    <p>{producto.sinopsis}</p>
-                    <h4>Stock de producto: {producto.stock} unidades</h4>
-                <li>
+                    <h2 id='nombre'>{producto.nombre}</h2>
+                    <h3 id='autor'>{producto.autor}</h3>
+                    <h1 id='precio'>S/ {producto.precio}</h1>
+                    <p id='sinopsis'>{producto.sinopsis}</p>
+                    <h4 id='stock'>Stock de producto: {producto.stock} unidades</h4>
+                <li id='list'>
                     <ul id='listItem'>Formato: {producto.formato}</ul>
                     <ul id='listItem'>Dimensiones: {producto.dimensiones}</ul>
                     <ul id='listItem'>Fecha de publicación: {producto.fecha_pub}</ul>
