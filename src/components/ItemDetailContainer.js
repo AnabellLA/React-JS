@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ItemDetail } from './ItemDetail';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [producto, setproducto] = useState({});
     const [isLoading, setIsLoading] = useState(true);
+    const { iditem } = useParams();
 
     useEffect(() => {
         setIsLoading(true);
@@ -11,7 +13,7 @@ const ItemDetailContainer = () => {
             () =>
                 fetch('./data/data.json')
                 .then(resp => resp.json())
-                .then((data) => {setproducto(data.find((i) => i.id === 1))})
+                .then((data) => {setproducto(data.find((i) => i.id === iditem))})
                 .finally(() => setIsLoading(false))                
                 , 2000);
     }, [])
