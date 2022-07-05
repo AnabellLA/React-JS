@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
         setIsLoading(true);
         setTimeout(
             () =>
-                fetch('./data/data.json')
+                fetch('../data/data.json')
                 .then(resp => resp.json())
                 .then((data) => {setproducto(data.find((i) => i.id === iditem))})
                 .finally(() => setIsLoading(false))                

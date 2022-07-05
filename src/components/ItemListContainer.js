@@ -15,7 +15,7 @@ useEffect(() => {
     setIsLoading(true);
     setTimeout(
         () =>
-            fetch('./data/data.json')
+            fetch('../data/data.json')
             .then(resp => resp.json())
             .then((data) => {setproductos(idcategoria ? data.filter((item) => item.idcategoria === idcategoria) : data)})
             .finally(() => setIsLoading(false))
