@@ -17,7 +17,7 @@ useEffect(() => {
         () =>
             fetch('../data/data.json')
             .then(resp => resp.json())
-            .then((data) => {setproductos(idcategoria ? data.filter((item) => item.idcategoria === idcategoria) : data)})
+            .then((data) => {setproductos(idcategoria ? data.filter((item) => item.categoria === idcategoria) : data)})
             .finally(() => setIsLoading(false))
             , 2000);
 }, [idcategoria])

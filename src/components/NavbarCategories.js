@@ -3,7 +3,7 @@ import { Nav } from 'react-bootstrap';
 
 export const NavBarCategories = () => {
     const categories = [
-        {id: 'catalogo', address: '/categoria/catalogo', text: 'Catálogo'},
+        {id: 'catalogo', address: '/catalogo', text: 'Catálogo'},
         {id: 'shounen', address: '/categoria/Shounen', text: 'shounen'},
         {id: 'shojo', address: '/categoria/Shojo', text: 'Shōjo'},
         {id: 'josei', address: '/categoria/Josei', text: 'Josei'},
