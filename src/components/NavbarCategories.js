@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const NavBarCategories = () => {
     const categories = [
@@ -13,7 +14,7 @@ export const NavBarCategories = () => {
         <Nav className="me-auto">
             {categories.map((cat) => {
                 return (
-                    <Nav.Link href={cat.address} className="links" key={cat.id}>{cat.text}</Nav.Link>
+                    <Nav.Link as={Link} to={cat.address} className="links" key={cat.id}>{cat.text}</Nav.Link>
                 );
             })}
         </Nav>
