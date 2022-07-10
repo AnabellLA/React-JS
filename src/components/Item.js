@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ItemCount from './ItemCount';
 import './Item.css';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ export const Item = ({mangaid, name, image, price, stock}) => {
                 <Card.Body>
                 <Card.Title>{name}</Card.Title>
                     <Card.Text>S/ {price}</Card.Text>
-                    <ItemCount stock={stock}/>
                     <Link to={`/item/${mangaid}`}>
                         <Button id="verMas" variant="dark">Ver más</Button>
                     </Link>

@@ -4,15 +4,14 @@ import ItemCount from './ItemCount';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-
 export const ItemDetail = ({producto}) => {
     
     const stock = producto.stock
+    const[itemCount, setItemCount] = useState();
 
-    const saveDataHandler = (numberSaved) => {
-        const countData = {
-            ...numberSaved,
-        }
+    const onAdd = (num) => {
+        setItemCount(num);
+        console.log(num)
     }
 
     return (
@@ -26,7 +25,6 @@ export const ItemDetail = ({producto}) => {
                     <h3 id='autor'>{producto.autor}</h3>
                     <h1 id='precio'>S/ {producto.precio}</h1>
                     <p id='sinopsis'>{producto.sinopsis}</p>
-                    <ItemCount onSaveData={saveDataHandler} stock={stock}/>
                 <li id='list'>
                     <ul id='listItem'>Formato: {producto.formato}</ul>
                     <ul id='listItem'>Dimensiones: {producto.dimensiones}</ul>
@@ -36,9 +34,9 @@ export const ItemDetail = ({producto}) => {
                     <ul id='listItem'>ISBN10: {producto.ISBN10}</ul>
                     <ul id='listItem'> ISBN13: {producto.ISBN13}</ul>
                 </li>
-                <Link to={`/cart`}>
+                {itemCount > 0 ? (<Link to={`/cart`}>
                     <Button id="terminar" variant="danger">Terminar mi compra</Button>
-                </Link>
+                </Link>) : (<ItemCount onAdd={onAdd} stock={stock}/>) }
                 </div>
             </div>
     )
