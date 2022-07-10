@@ -14,7 +14,7 @@ export const Item = ({mangaid, name, image, price, stock}) => {
                     <Card.Text>S/ {price}</Card.Text>
                     <ItemCount stock={stock}/>
                     <Link to={`/item/${mangaid}`}>
-                        <Button variant="dark">Ver más</Button>
+                        <Button id="verMas" variant="dark">Ver más</Button>
                     </Link>
                 </Card.Body>
             </Card>

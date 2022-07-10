@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import "./ItemCount.css";
 import Swal from "sweetalert2";
+import Button from 'react-bootstrap/Button';
 
-function ItemCount({ stock }){
+
+function ItemCount({ stock }, props){
     const [num, setNum] = useState(0);
 
     useEffect(() => {
@@ -35,11 +37,15 @@ function ItemCount({ stock }){
             setNum(num - 1)
         }
     }
-
-    const reiniciar = () => {
-        setNum(0)
-    }
     
+    const newNumber = () => {
+        const numberSaved = {
+            number: num
+        }
+
+        props.onSaveData(numberSaved)
+    }
+
     return(
         <>
             <div id="flex">
@@ -48,6 +54,7 @@ function ItemCount({ stock }){
                 <button onClick={sumar} id="button">+</button>
             </div>
             <p>{ stock >= 1 ? `${stock} unidades disponibles` : 'No hay stock' }</p>
+            <Button variant="dark" onClick={newNumber}>Agregar al carrito</Button>
         </>
     )
 }
