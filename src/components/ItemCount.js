@@ -3,7 +3,6 @@ import "./ItemCount.css";
 import Swal from "sweetalert2";
 import Button from 'react-bootstrap/Button';
 
-
 function ItemCount({ stock, onAdd }){
     const [num, setNum] = useState(0);
 

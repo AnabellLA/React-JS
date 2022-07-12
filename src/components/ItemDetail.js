@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './ItemDetail.css';
 import ItemCount from './ItemCount';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { CartContext } from "./Context/CartContext";
 
 export const ItemDetail = ({producto}) => {
     
     const stock = producto.stock
     const[itemCount, setItemCount] = useState();
+    const { addToCart } = useContext(CartContext);
 
     const onAdd = (num) => {
         setItemCount(num);
-        console.log(num)
+        addToCart(producto, num);
     }
 
     return (
@@ -35,7 +37,7 @@ export const ItemDetail = ({producto}) => {
                     <ul id='listItem'> ISBN13: {producto.ISBN13}</ul>
                 </li>
                 {itemCount > 0 ? (<Link to={`/cart`}>
-                    <Button id="terminar" variant="danger">Terminar mi compra</Button>
+                    <Button id="terminar" variant="dark">Ir al carrito</Button>
                 </Link>) : (<ItemCount onAdd={onAdd} stock={stock}/>) }
                 </div>
             </div>
