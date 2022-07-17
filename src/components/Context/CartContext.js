@@ -1,7 +1,6 @@
 import React, { useState, createContext } from "react";
 import Swal from "sweetalert2";
 
-
 export const CartContext = createContext({})
 
 const {Provider} = CartContext
@@ -10,20 +9,20 @@ export const CartProvider = ({ defaultValue = [], children }) => {
 
     const [cart, setCart] = useState(defaultValue);
 
-    const addToCart = (item, quantity) => {
-        if(isInCart(item.id)){
+    const addToCart = (producto, quantity) => {
+        if(isInCart(producto.id)){
             const newCart = [...cart]
             for(const element of newCart) {
-                if (element.item.id === item.id && element.item.stock < (element.quantity + quantity))
+                if (element.producto.id === producto.id && element.producto.stock < (element.quantity + quantity))
                 Swal.fire({
                     title: 'Atención',
-                    text: `El stock máximo de este producto es ${element.item.stock} unidades, puedes agregar ${element.item.stock - element.quantity}`,
+                    text: `El stock máximo de este producto es ${element.producto.stock} unidades, puedes agregar ${element.producto.stock - element.quantity}`,
                     icon: 'warning',
                     timer: 2000
                 });
             }
             for(const element of newCart) {
-                if (element.item.id === item.id && element.item.stock >= (element.quantity + quantity))
+                if (element.producto.id === producto.id && element.producto.stock >= (element.quantity + quantity))
                     element.quantity = element.quantity + quantity;
                 
             }
@@ -34,7 +33,7 @@ export const CartProvider = ({ defaultValue = [], children }) => {
                 [
                     ...cart,
                     {
-                        item: item,
+                        producto: producto,
                         quantity: quantity
                     }
                 ]
@@ -43,11 +42,11 @@ export const CartProvider = ({ defaultValue = [], children }) => {
     }
 
     const isInCart = (id) => {
-        return cart.find((element) => element.item.id === id)
+        return cart.find((element) => element.producto.id === id)
     }
 
     const removeFromCart = (id) => {
-        const newCart = [...cart].filter(element => element.item.id !== id);
+        const newCart = [...cart].filter(element => element.producto.id !== id);
         setCart(newCart);
     }
 
@@ -55,11 +54,26 @@ export const CartProvider = ({ defaultValue = [], children }) => {
         setCart([]);
     }
 
+    const getQuantity = () => {
+        let cantidad = 0
+        cart.forEach((element) => cantidad = cantidad + element.quantity)
+        return cantidad
+    }
+
+    const getTotal = () => {
+        let total = 0
+        cart.forEach((element) => {
+            total = total + (element.quantity * element.producto.precio)
+        })
+    }
+
     const context = {
         cart,
         addToCart,
         removeFromCart,
-        clearCart
+        clearCart,
+        getQuantity,
+        getTotal
     }
 
     return (
