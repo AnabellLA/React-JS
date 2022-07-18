@@ -2,3 +2,27 @@
     height: 30px;
     width: auto;
 }
+#carrito{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    width: 100%;
+    justify-content: center;
+}
+#cantidad{
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: rgb(216, 8, 8);
+    border-radius: 55px;
+    padding: 0 5.5px;
+}
+@media screen and (min-width: 992px) {
+    #carrito{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-end;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
