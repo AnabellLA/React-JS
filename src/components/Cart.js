@@ -20,10 +20,17 @@ const CartView = () => {
         }
     }, [cart.length]);
 
-    let totalCantidad=0;
-    {cart.map( element =>  totalCantidad = ( totalCantidad + parseInt(element.quantity)) )}
-    let totalPrecio=0;
-    {cart.map( element =>  totalPrecio = ( totalPrecio + ( parseInt(element.producto.precio) * parseInt(element.quantity)) ))}
+    const getQuantity = () => {
+        let totalCantidad=0;
+        {cart.map( element =>  totalCantidad = ( totalCantidad + parseInt(element.quantity)) )}
+        return totalCantidad;    
+    }
+
+    const getTotal = () =>{
+        let totalPrecio=0;
+        {cart.map( element =>  totalPrecio = ( totalPrecio + ( parseInt(element.producto.precio) * parseInt(element.quantity)) ))}
+        return totalPrecio;    
+    }
 
     if(!empty) {
         return(
@@ -51,8 +58,8 @@ const CartView = () => {
                         </tr>))}
                     </tbody>
                 </Table>
-                <p id='tablaTotales'>Cantidad Total: {totalCantidad} und.</p>
-                <p id='tablaTotales'>Precio Total: S/ {totalPrecio}</p>
+                <p id='tablaTotales'>Cantidad Total: {getQuantity()} und.</p>
+                <p id='tablaTotales'>Precio Total: S/ {getTotal()}</p>
                 <Link to="/home">
                     <Button onClick={() => clearCart()} variant="dark">Terminar mi compra</Button>
                 </Link>{'  '}
