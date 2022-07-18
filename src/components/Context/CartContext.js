@@ -54,7 +54,7 @@ export const CartProvider = ({ defaultValue = [], children }) => {
         setCart([]);
     }
 
-    /*const getQuantity = () => {
+    const getQuantity = () => {
         let cantidad = 0
         cart.forEach((element) => cantidad = cantidad + element.quantity)
         return cantidad
@@ -66,15 +66,15 @@ export const CartProvider = ({ defaultValue = [], children }) => {
             total = total + (element.quantity * element.producto.precio)
         })
         return total
-    }*/
+    }
 
     const context = {
         cart,
         addToCart,
         removeFromCart,
         clearCart,
-        /*getQuantity,
-        getTotal*/
+        getQuantity,
+        getTotal
     }
 
     return (

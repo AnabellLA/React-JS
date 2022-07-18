@@ -9,7 +9,7 @@ import './Carts.css';
 
 const CartView = () => {
 
-    const { cart, removeFromCart, clearCart /*, getQuantity, getTotal*/ } = useContext(CartContext);
+    const { cart, removeFromCart, clearCart, getQuantity, getTotal } = useContext(CartContext);
     const[empty, setEmpty] = useState(true);
 
     useEffect(() => {
@@ -19,18 +19,6 @@ const CartView = () => {
             setEmpty(false);
         }
     }, [cart.length]);
-
-    const getQuantity = () => {
-        let totalCantidad=0;
-        {cart.map( element =>  totalCantidad = ( totalCantidad + parseInt(element.quantity)) )}
-        return totalCantidad;    
-    }
-
-    const getTotal = () =>{
-        let totalPrecio=0;
-        {cart.map( element =>  totalPrecio = ( totalPrecio + ( parseInt(element.producto.precio) * parseInt(element.quantity)) ))}
-        return totalPrecio;    
-    }
 
     if(!empty) {
         return(
