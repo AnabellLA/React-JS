@@ -22,8 +22,12 @@ const ItemDetailContainer = () => {
     }, [])
 
     return (
-        isLoading ? (<h1>Cargando...</h1>) :
-        (<ItemDetail producto={producto}/>)
+        producto.length > 0 ?
+        (isLoading ? (<h1>Cargando...</h1>) :
+        (<ItemDetail producto={producto}/>)) :
+        (isLoading ? (<h1>Cargando...</h1>) : 
+        (<h1 id='error'>La página que buscas no se pudo encontrar 😞 ...</h1>)
+        )
     );
     };
 

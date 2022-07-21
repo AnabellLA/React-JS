@@ -34,10 +34,14 @@ useEffect( ()=> {
 }, [idcategoria])
 
 return (
-    isLoading ? (<h1>Cargando...</h1>) :
-    (<div id='container'>
-        <ItemList Productos={productos} />
-    </div>)
+productos.length > 0 ?
+        (isLoading ? (<h1>Cargando...</h1>) :
+        (<div id='container'>
+            <ItemList Productos={productos} />
+        </div>)) :
+        ((isLoading ? (<h1>Cargando...</h1>) : 
+        (<h1 id='error'>La página que buscas no se pudo encontrar 😞 ...</h1>)
+        ))
 );
 };
 

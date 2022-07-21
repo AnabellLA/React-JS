@@ -7,7 +7,7 @@ import { NavBarCategories } from './NavbarCategories';
 import { Link } from 'react-router-dom';
 
 
-function NavbarExample(){
+function NavbarItem(){
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
@@ -22,4 +22,4 @@ function NavbarExample(){
     );
 }
 
-export default NavbarExample;
+export default NavbarItem;
