@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from "./Context/CartContext";
 import Table from 'react-bootstrap/Table';
 import tacho from '../tacho.png';
-import './Carts.css';
+import './Cart.css';
 
 
 const CartView = () => {
@@ -48,8 +48,8 @@ const CartView = () => {
                 </Table>
                 <p id='tablaTotales'>Cantidad Total: {getQuantity()} und.</p>
                 <p id='tablaTotales'>Precio Total: S/ {getTotal()}</p>
-                <Link to="/home">
-                    <Button onClick={() => clearCart()} variant="dark">Terminar mi compra</Button>
+                <Link to="/forms">
+                    <Button variant="dark">Terminar mi compra</Button>
                 </Link>{'  '}
                 <Button onClick={() => clearCart()} variant="dark">Limpiar carrito</Button>
             </div>
