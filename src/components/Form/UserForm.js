@@ -46,7 +46,7 @@ const NewClient = () => {
             })
         }else{
             agregarOrden()
-            setTimeout( () => clearCart(),6000);
+            setTimeout( () => clearCart(), 6000);
         }
     }
 
@@ -70,19 +70,22 @@ const NewClient = () => {
             };
             const db = getFirestore();
             const clientesCollection = collection(db, "clientes");
-            addDoc(clientesCollection, client).then(({ id }) => {console.log(id)});
-            Swal.fire({
-                //Cómo puedo obtener el ID de este nuevo producto agregado para usarlo en mi notificación?
-                title: `Número de compra ${client.buyer.name}`,
-                //Quiero usarlo como número de compra
+            addDoc(clientesCollection, client).then(({ id }) => {Swal.fire({
+                title: `Número de compra ${id}`,
                 text: `Gracias por su compra ${client.buyer.name}! el total es ${client.total} soles, todo el detalle será enviado a su correo ${client.buyer.email}`,
                 icon: 'success',
                 confirmButtonText: "retornar al home",
                 timer: 6000
-            }).then(resultado =>{
+            }).then(resultado => {
+                if (resultado.value) {
                     setGoHome(true);
-                    clearCart();}
-            )
+                    clearCart()
+                }else{
+                    setGoHome(true);
+                    clearCart()
+                }
+            })
+        });       
     }
 
 
