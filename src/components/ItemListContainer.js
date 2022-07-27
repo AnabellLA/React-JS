@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ItemList } from './ItemList';
 import './ItemListContainer.css';
 import { useParams } from 'react-router-dom';
+import loading from '../loading.gif';
 import { getFirestore, collection, orderBy, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
@@ -35,11 +36,11 @@ useEffect( ()=> {
 
 return (
 productos.length > 0 ?
-        (isLoading ? (<h1>Cargando...</h1>) :
+        (isLoading ? (<img src={ loading } alt='loading' id='loading'></img>) :
         (<div id='container'>
             <ItemList Productos={productos} />
         </div>)) :
-        ((isLoading ? (<h1>Cargando...</h1>) : 
+        ((isLoading ? (<img src={ loading } alt='loading' id='loading'></img>) : 
         (<h1 id='error'>La página que buscas no se pudo encontrar 😞 ...</h1>)
         ))
 );
