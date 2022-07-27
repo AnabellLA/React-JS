@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 export const NavBarCategories = () => {
     const categories = [
         {id: 'catalogo', address: '/catalogo', text: 'Catálogo'},
-        {id: 'shounen', address: '/categoria/Shounen', text: 'shounen'},
+        {id: 'shounen', address: '/categoria/Shounen', text: 'Shounen'},
         {id: 'shojo', address: '/categoria/Shojo', text: 'Shōjo'},
         {id: 'josei', address: '/categoria/Josei', text: 'Josei'},
+        {id: 'seinen', address: '/categoria/Seinen', text: 'Seinen'},
     ];
 
     return(

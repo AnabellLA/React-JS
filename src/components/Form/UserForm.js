@@ -71,7 +71,7 @@ const NewClient = () => {
             const db = getFirestore();
             const clientesCollection = collection(db, "clientes");
             addDoc(clientesCollection, client).then(({ id }) => {Swal.fire({
-                title: `Número de compra ${id}`,
+                title: `Código de compra: ${id}`,
                 text: `Gracias por su compra ${client.buyer.name}! el total es ${client.total} soles, todo el detalle será enviado a su correo ${client.buyer.email}`,
                 icon: 'success',
                 confirmButtonText: "retornar al home",
