@@ -38,7 +38,16 @@ function ItemCount({ stock, onAdd }){
     }
     
     const addToCart = () => {
-        onAdd(num);
+        if(num>0){
+            onAdd(num);
+        }else{
+            Swal.fire({
+                title: 'Atención',
+                text: 'Por favor, agregue elementos al carrito',
+                icon: 'error',
+                timer: 2000
+            })
+        }
     }
 
     return(
