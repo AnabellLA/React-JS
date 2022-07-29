@@ -56,10 +56,10 @@ const CartView = () => {
         )
     }else{
         return (
-            <div>
-                <h1 id='mensaje'>No hay elemenos en el carrito</h1>
+            <div id='mensaje'>
+                <h1>No hay elemenos en el carrito</h1>
                 <Link to="/home">
-                    <Button variant="dark">Volver</Button>
+                    <Button variant="dark">Volver al menú</Button>
                 </Link>
             </div>
         )

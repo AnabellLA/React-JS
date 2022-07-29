@@ -2,18 +2,18 @@ import { collection, getFirestore, addDoc } from "firebase/firestore";
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from "../Context/CartContext";
 import Button from 'react-bootstrap/Button';
-import ItemListContainer from '../ItemListContainer';
 import Swal from "sweetalert2";
 import "./UserForm.css"
+import { useNavigate, Link } from "react-router-dom";
 
 const NewClient = () => {
 
     const { cart, getTotal, clearCart } = useContext(CartContext);
-    const[goHome, setGoHome] = useState(false);
     const [userName, setUserName] = useState("");
     const [userMail, setUserMail] = useState("");
     const [userPhone, setUserPhone] = useState("");
     const[empty, setEmpty] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (cart.length === 0){
@@ -46,7 +46,6 @@ const NewClient = () => {
             })
         }else{
             agregarOrden()
-            setTimeout( () => clearCart(), 6000);
         }
     }
 
@@ -74,15 +73,15 @@ const NewClient = () => {
                 title: `Código de compra: ${id}`,
                 text: `Gracias por su compra ${client.buyer.name}! el total es ${client.total} soles, todo el detalle será enviado a su correo ${client.buyer.email}`,
                 icon: 'success',
-                confirmButtonText: "retornar al home",
+                confirmButtonText: "retornar al menú",
                 timer: 6000
             }).then(resultado => {
                 if (resultado.value) {
-                    setGoHome(true);
-                    clearCart()
+                    clearCart();
+                    navigate('/home')
                 }else{
-                    setGoHome(true);
-                    clearCart()
+                    clearCart();
+                    navigate('/home')
                 }
             })
         });       
@@ -90,19 +89,23 @@ const NewClient = () => {
 
 
     return (
-        empty ? <ItemListContainer /> : (!goHome ? (
-            <form id="formulario">
-            <label id="label" htmlFor="name">Nombre completo</label>
-            <input id="name" type="text" name="name" onChange={nameHandler}/>
-            <label id="label" htmlFor="mail">Correo electrónico</label>
-            <input id="mail" type="email" onChange={mailHandler}/>
-            <label id="label" htmlFor="phone">Teléfono</label>
-            <input id="phone" type="tel" placeholder="+51" onChange={phoneHandler}/>
-            <br/>
-            <Button variant="dark" onClick={clickHandler}>Enviar</Button>
-            </form>
-        //¿como hago para que se pueda redirigir al home sin mantener el "/form" en la URL?
-        ): <ItemListContainer />)
+        empty ?
+        (<div id='mensaje'>
+            <h1>No hay elemenos en el carrito</h1>
+            <Link to="/home">
+                <Button variant="dark">Volver al menú</Button>
+            </Link>
+        </div>) : 
+        (<form id="formulario">
+        <label id="label" htmlFor="name">Nombre completo</label>
+        <input id="name" type="text" name="name" onChange={nameHandler}/>
+        <label id="label" htmlFor="mail">Correo electrónico</label>
+        <input id="mail" type="email" onChange={mailHandler}/>
+        <label id="label" htmlFor="phone">Teléfono</label>
+        <input id="phone" type="tel" placeholder="+51" onChange={phoneHandler}/>
+        <br/>
+        <Button variant="dark" onClick={clickHandler}>Enviar</Button>
+        </form>)
     )    
 }
 
