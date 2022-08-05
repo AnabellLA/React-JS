@@ -1,6 +1,6 @@
 # MangaStore
 
-MangaStore es un ecommerce peruano :shopping::peru: de mangas físicos traducidos al inglés 	:gb: y español :es: con precios en soles.
+MangaStore es un ecommerce peruano :shopping: de mangas físicos traducidos al inglés y español con precios en soles.
 
 ## Procesos y funcionalidades disponibles en la página
 
