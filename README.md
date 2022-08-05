@@ -16,9 +16,9 @@ MangaStore es un ecommerce peruano de mangas físicos traducidos al inglés y es
 ### `HTML`, `CSS` y `JavaScript`
 
 Se utilizó `código HTML` para crear el contenido de la web, `código CSS` para dar los estilos visuales y el `lenguaje de programación JavaScript` para añadir características interactivas a la página.\
-Para aprender más sobre `HTML` visita [HTML documentation](https://devdocs.io/html/).\
+_Para aprender más sobre `HTML` visita [HTML documentation](https://devdocs.io/html/).\
 Para aprender más sobre `CSS` visita [CSS documentation](https://devdocs.io/css/).\
-Para aprender más sobre `JavaScript` visita [JavaScript documentation](https://devdocs.io/javascript/).
+Para aprender más sobre `JavaScript` visita [JavaScript documentation](https://devdocs.io/javascript/)._
 
 ### Librería React: `React App`
 
@@ -39,7 +39,7 @@ También puede ver cualquier error lint que ocurra en la consola.
 ##### `npm test`
 
 Lance el ejecutor de pruebas en el modo de vigilancia interactiva.\
-_Vea la sección sobre **[running tests](https://facebook.github.io/create-react-app/docs/running-tests)** para más información.
+_Vea la sección sobre **[running tests](https://facebook.github.io/create-react-app/docs/running-tests)** para más información._
 
 ##### `npm run build`
 
@@ -53,36 +53,36 @@ _Vea la sección sobre **[deployment](https://facebook.github.io/create-react-ap
 
 #### Más detalles
 
-Para mayor detalle puedes visitar **[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).**\
-_Para aprender más sobre `React` visita **[React documentation](https://reactjs.org/).
+_Para mayor detalle puedes visitar **[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).**\_
+_Para aprender más sobre `React` visita **[React documentation](https://reactjs.org/)._
 
 ### Galerías utilizadas en el proyecto
 
 #### `React Bootstrap`
 
 Para dar estilos al `header`, a las `cards` y a los `botones` se utilizó `React Bootstrap`.\
-_Para mayor  detalle sobre esta librería puedes visitar **[React Bootstrap](https://react-bootstrap.github.io/).**\
-_Para aprender como instalar e importar componentes puedes visitar **[React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction).
+_Para mayor  detalle sobre esta librería puedes visitar **[React Bootstrap](https://react-bootstrap.github.io/).**\_
+_Para aprender como instalar e importar componentes puedes visitar **[React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction)**._
 
 #### `SweetAlert2`
 
 Para las notificaciones que se pueden ver en la página se utilizó `SweetAlert2`.\
-_Para mayor detalle sobre la librería puedes visitar: **[SweetAlert2](https://sweetalert2.github.io/).
+_Para mayor detalle sobre la librería puedes visitar: **[SweetAlert2](https://sweetalert2.github.io/)**._
 
 ### Otros Recursos Utilizados
 
 #### `react-router-dom package`
 
 Para utilizar algunas funcionalidades como `Links` y `UseParams` se utilizó el paquete `react-router-dom`.\
-_Para mayor detalle sobre este paquete puedes visitar: **[react-router-dom - tutorial](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md).
+_Para mayor detalle sobre este paquete puedes visitar: **[react-router-dom - tutorial](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md)**._
 
 #### `Firebase`
 
 Como base de datos para almacenar la información de los productos del catálogo y los registros de compras se utilizó `Firebase`.\
 _Para mayor detalle sobre Firebase puedes visitar: **[Firebase](https://console.firebase.google.com/u/0/).**\
-Para ver un proyecto demo en Firebase visite: **[Firebase - proyecto demo](https://console.firebase.google.com/u/0/project/fir-demo-project/overview).
+Para ver un proyecto demo en Firebase visite: **[Firebase - proyecto demo](https://console.firebase.google.com/u/0/project/fir-demo-project/overview)**._
 
 #### `Cloudinary`
 
 Como base para almacenar las imágenes que se utilizaron en la página y obtener los links de las mismas se utilizó `Cloudinary`.\
-_Para mayor detalle sobre Cloudinary puedes visitar: **[Cloudinary](https://cloudinary.com/).
+_Para mayor detalle sobre Cloudinary puedes visitar: **[Cloudinary](https://cloudinary.com/)**._
