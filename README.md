@@ -61,8 +61,8 @@ _Para aprender más sobre `React` visita **[React documentation](https://reactjs
 #### `React Bootstrap`
 
 Para dar estilos al `header`, a las `cards` y a los `botones` se utilizó `React Bootstrap`.\
-_Para mayor  detalle sobre esta librería puedes visitar **[React Bootstrap](https://react-bootstrap.github.io/).**\_
-_Para aprender como instalar e importar componentes puedes visitar **[React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction)**._
+_Para mayor  detalle sobre esta librería puedes visitar **[React Bootstrap](https://react-bootstrap.github.io/).**\
+Para aprender como instalar e importar componentes puedes visitar **[React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction)**._
 
 #### `SweetAlert2`
 
