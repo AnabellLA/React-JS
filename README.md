@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# MangaStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MangaStore es un ecommerce peruano de mangas físicos traducidos al inglés y español con precios en soles.
 
-## Available Scripts
+## Procesos y funcionalidades disponibles en la página
 
-In the project directory, you can run:
+1. Se puede visualizar el catálogo de productos completo y dividido por categorías.
+2. El usuario puede revisar los títulos disponibles e ingresar al detalle del mismo haciendo clic en el botón.
+3. Al ingresar al detalle del producto se puede encontrar la información del mismo y el usuario puede elegir comprar uno o más ejemplares del mismo o diferentes título al mismo tiempo.
+4. El usuiario, desde el detalle del producto o el ícono de carrito en el header, puede pasar a la página del carrito de compras y finalizar la misma previa validación y confirmación de su compra.
+5. Una vez aceptada la compra se lo redirigirá al formulario donde deberá completar su información de contacto para finalizar el proceso y que la compra quede registrada.
+6. Una vez registrada la compra le aparecerá un mensaje  de confirmación y se lo redirigirá al Home.
 
-### `npm start`
+## código, librerías, galerías y otros recursos utilizados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `HTML`, `CSS` y `JavaScript`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Se utilizó `código HTML` para crear el contenido de la web, `código CSS` para dar los estilos visuales y el `lenguaje de programación JavaScript` para añadir características interactivas a la página.
+Para aprender más sobre `HTML` visita [HTML documentation](https://devdocs.io/html/).
+Para aprender más sobre `CSS` visita [CSS documentation](https://devdocs.io/css/).
+Para aprender más sobre `JavaScript` visita [JavaScript documentation](https://devdocs.io/javascript/).
 
-### `npm test`
+### Librería React: `React App`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este proyecto fue iniciado con [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm run build`
+#### Scripts disponibles
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En el directorio del proyecto usted puede usar:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ejecute `npm start` para inicializar la app en el modo desarrollador\
+Abre [http://localhost:3000](http://localhost:3000) en tu buscador para visualizarlo.
 
-### `npm run eject`
+Esta página se actualizará cuando realices cambios en el código\
+También puede ver cualquier error lint que ocurra en la consola.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##### `npm test`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lance el ejecutor de pruebas en el modo de vigilancia interactiva.\
+Vea la sección sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para más información.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##### `npm run build`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Construye la aplicación para producción en la carpeta `build`.\
+Esto empaqueta correctamente React en modo producción y optimiza la compilación para obtener el mejor rendimiento.
 
-## Learn More
+La compilación está minificada y los nombres de los archivos incluyen los hashes.\
+Tu aplicación está lista para ser desplegada!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Vea la sección sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para más información.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Más detalles
 
-### Code Splitting
+Para mayor detalle puedes visitar [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para aprender más sobre `React` visita [React documentation](https://reactjs.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Galerías utilizadas en el proyecto
 
-### Analyzing the Bundle Size
+#### `React Bootstrap`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para dar estilos al `header`, a las `cards` y a los `botones` se utilizó `React Bootstrap`.
+Para mayor  detalle sobre esta librería puedes visitar [React Bootstrap](https://react-bootstrap.github.io/).
+Para aprender como instalar e importar componentes puedes visitar [React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction).
 
-### Making a Progressive Web App
+#### `SweetAlert2`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para las notificaciones que se pueden ver en la página se utilizó `SweetAlert2`.
+Para mayor detalle sobre la librería puedes visitar: [SweetAlert2](https://sweetalert2.github.io/).
 
-### Advanced Configuration
+### Otros Recursos Utilizados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### `react-router-dom package`
 
-### Deployment
+Para utilizar algunas funcionalidades como `Links` y `UseParams` se utilizó el paquete `react-router-dom`.
+Para mayor detalle sobre este paquete puedes visitar: [react-router-dom - tutorial](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### `Firebase`
 
-### `npm run build` fails to minify
+Como base de datos para almacenar la información de los productos del catálogo y los registros de compras se utilizó `Firebase`.
+Para mayor detalle sobre Firebase puedes visitar: [Firebase](https://console.firebase.google.com/u/0/).
+Para ver un proyecto demo en Firebase visite: [Firebase - proyecto demo](https://console.firebase.google.com/u/0/project/fir-demo-project/overview).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### `Cloudinary`
+
+Como base para almacenar las imágenes que se utilizaron en la página y obtener los links de las mismas se utilizó `Cloudinary`.
+Para mayor detalle sobre Cloudinary puedes visitar: [Cloudinary](https://cloudinary.com/).
