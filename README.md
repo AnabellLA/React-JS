@@ -54,7 +54,7 @@ _Vea la sección sobre **[deployment](https://facebook.github.io/create-react-ap
 #### Más detalles
 
 _Para mayor detalle puedes visitar **[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).**\
-Para aprender más sobre `React` visita **[React documentation](https://reactjs.org/)._
+Para aprender más sobre `React` visita **[React documentation](https://reactjs.org/)**._
 
 ### Galerías utilizadas en el proyecto
 
