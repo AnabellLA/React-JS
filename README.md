@@ -1,6 +1,6 @@
 # MangaStore
 
-MangaStore es un ecommerce peruano de mangas físicos traducidos al inglés y español con precios en soles.
+MangaStore es un ecommerce peruano :shopping::peru: de mangas físicos traducidos al inglés 	:gb: y español :es: con precios en soles.
 
 ## Procesos y funcionalidades disponibles en la página
 
@@ -16,13 +16,13 @@ MangaStore es un ecommerce peruano de mangas físicos traducidos al inglés y es
 ### `HTML`, `CSS` y `JavaScript`
 
 Se utilizó `código HTML` para crear el contenido de la web, `código CSS` para dar los estilos visuales y el `lenguaje de programación JavaScript` para añadir características interactivas a la página.\
-_Para aprender más sobre `HTML` visita [HTML documentation](https://devdocs.io/html/).\
-Para aprender más sobre `CSS` visita [CSS documentation](https://devdocs.io/css/).\
-Para aprender más sobre `JavaScript` visita [JavaScript documentation](https://devdocs.io/javascript/)._
+_Para aprender más sobre `HTML` visita **[HTML documentation](https://devdocs.io/html/)**.\
+Para aprender más sobre `CSS` visita **[CSS documentation](https://devdocs.io/css/)**.\
+Para aprender más sobre `JavaScript` visita **[JavaScript documentation](https://devdocs.io/javascript/)**._
 
 ### Librería React: `React App`
 
-Este proyecto fue iniciado con [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue iniciado con **[Create React App](https://github.com/facebook/create-react-app)**.
 
 #### Scripts disponibles
 
@@ -31,7 +31,7 @@ En el directorio del proyecto usted puede usar:
 ##### `npm start`
 
 Ejecute `npm start` para inicializar la app en el modo desarrollador\
-Abre [http://localhost:3000](http://localhost:3000) en tu buscador para visualizarlo.
+Abre **[http://localhost:3000](http://localhost:3000)** en tu buscador para visualizarlo.
 
 Esta página se actualizará cuando realices cambios en el código\
 También puede ver cualquier error lint que ocurra en la consola.
