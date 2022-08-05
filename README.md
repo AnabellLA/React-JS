@@ -39,7 +39,7 @@ También puede ver cualquier error lint que ocurra en la consola.
 ##### `npm test`
 
 Lance el ejecutor de pruebas en el modo de vigilancia interactiva.\
-Vea la sección sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para más información.
+_Vea la sección sobre **[running tests](https://facebook.github.io/create-react-app/docs/running-tests)** para más información.
 
 ##### `npm run build`
 
@@ -47,42 +47,42 @@ Construye la aplicación para producción en la carpeta `build`.\
 Esto empaqueta correctamente React en modo producción y optimiza la compilación para obtener el mejor rendimiento.
 
 La compilación está minificada y los nombres de los archivos incluyen los hashes.\
-Tu aplicación está lista para ser desplegada!
+Tu aplicación está lista para ser desplegada! :blush:
 
-Vea la sección sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para más información.
+_Vea la sección sobre **[deployment](https://facebook.github.io/create-react-app/docs/deployment)** para más información._
 
 #### Más detalles
 
-Para mayor detalle puedes visitar [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\
-Para aprender más sobre `React` visita [React documentation](https://reactjs.org/).
+Para mayor detalle puedes visitar **[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).**\
+_Para aprender más sobre `React` visita **[React documentation](https://reactjs.org/).
 
 ### Galerías utilizadas en el proyecto
 
 #### `React Bootstrap`
 
 Para dar estilos al `header`, a las `cards` y a los `botones` se utilizó `React Bootstrap`.\
-Para mayor  detalle sobre esta librería puedes visitar [React Bootstrap](https://react-bootstrap.github.io/).\
-Para aprender como instalar e importar componentes puedes visitar [React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction).
+_Para mayor  detalle sobre esta librería puedes visitar **[React Bootstrap](https://react-bootstrap.github.io/).**\
+_Para aprender como instalar e importar componentes puedes visitar **[React Bootstrap - Introduction](https://react-bootstrap.github.io/getting-started/introduction).
 
 #### `SweetAlert2`
 
 Para las notificaciones que se pueden ver en la página se utilizó `SweetAlert2`.\
-Para mayor detalle sobre la librería puedes visitar: [SweetAlert2](https://sweetalert2.github.io/).
+_Para mayor detalle sobre la librería puedes visitar: **[SweetAlert2](https://sweetalert2.github.io/).
 
 ### Otros Recursos Utilizados
 
 #### `react-router-dom package`
 
 Para utilizar algunas funcionalidades como `Links` y `UseParams` se utilizó el paquete `react-router-dom`.\
-Para mayor detalle sobre este paquete puedes visitar: [react-router-dom - tutorial](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md).
+_Para mayor detalle sobre este paquete puedes visitar: **[react-router-dom - tutorial](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md).
 
 #### `Firebase`
 
 Como base de datos para almacenar la información de los productos del catálogo y los registros de compras se utilizó `Firebase`.\
-Para mayor detalle sobre Firebase puedes visitar: [Firebase](https://console.firebase.google.com/u/0/).\
-Para ver un proyecto demo en Firebase visite: [Firebase - proyecto demo](https://console.firebase.google.com/u/0/project/fir-demo-project/overview).
+_Para mayor detalle sobre Firebase puedes visitar: **[Firebase](https://console.firebase.google.com/u/0/).**\
+Para ver un proyecto demo en Firebase visite: **[Firebase - proyecto demo](https://console.firebase.google.com/u/0/project/fir-demo-project/overview).
 
 #### `Cloudinary`
 
 Como base para almacenar las imágenes que se utilizaron en la página y obtener los links de las mismas se utilizó `Cloudinary`.\
-Para mayor detalle sobre Cloudinary puedes visitar: [Cloudinary](https://cloudinary.com/).
+_Para mayor detalle sobre Cloudinary puedes visitar: **[Cloudinary](https://cloudinary.com/).
